@@ -4,6 +4,7 @@ import './globals.css'
 import Providers from "@/app/providers";
 import React from "react";
 import Navigation from "@/components/navigation";
+import TopBar from "@/components/top-bar";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -21,7 +22,10 @@ export default function RootLayout({children}: {
       <Providers>
         <main>
           <Navigation/>
-          {children}
+          <div className='inner-page'>
+            <TopBar/>
+            {children}
+          </div>
         </main>
       </Providers>
       </body>
