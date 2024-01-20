@@ -19,12 +19,12 @@ const config: Config = {
         main: "12px",
       },
       colors: {
-        primary: {
-          100: "rgba(248,21,57,1)",
-        },
-        secondary: {
-          100: "rgba(252,67,8,1)",
-        },
+        // primary: {
+        //   100: "rgba(248,21,57,1)",
+        // },
+        // secondary: {
+        //   100: "rgba(252,67,8,1)",
+        // },
         font: {
           100: "rgba(62,50,50,1)",
           75: "rgba(62,50,50,0.75)",
@@ -41,6 +41,14 @@ const config: Config = {
     },
   },
   darkMode: 'class',
-  plugins: [nextui()],
+  plugins: [nextui(
+      {
+        layout:{
+          radius:{
+            medium:'6px'
+          }
+        }
+      }
+  )],
 }
 export default config
