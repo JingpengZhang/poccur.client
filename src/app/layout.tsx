@@ -5,6 +5,7 @@ import Providers from "@/app/providers";
 import React from "react";
 import Navigation from "@/components/navigation";
 import TopBar from "@/components/top-bar";
+import WebFooter from "@/components/web-footer";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -26,6 +27,7 @@ export default function RootLayout({children}: {
             <TopBar/>
             {children}
           </div>
+          <WebFooter/>
         </main>
       </Providers>
       </body>
